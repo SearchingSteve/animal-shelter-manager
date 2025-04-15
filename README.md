@@ -3,7 +3,12 @@
 
 This project implements an **Animal Shelter Queue** system using a queue data structure. The shelter holds two types of animals: dogs and cats. The queue follows the **FIFO (First In, First Out)** principle, with the ability to adopt the oldest animal or adopt a specific type of animal (dog or cat).
 
-### Features:
+## How It Works:
+1. Animals are enqueued with an ID and a type ("Dog" or "Cat").
+2. Users can adopt animals from the shelter by dequeuing the oldest animal or selecting a dog/cat to adopt.
+3. The queue supports operations such as `dequeueAny()`, `dequeueDog()`, `dequeueCat()`, and `enqueue()` to manage the shelter effectively.
+
+## Features:
 - **Enqueue**: Add a new animal (dog or cat) to the shelter queue.
 - **Dequeue Any**: Adopt the oldest animal from the queue, regardless of its type.
 - **Dequeue Dog**: Adopt the oldest dog from the queue.
@@ -11,12 +16,8 @@ This project implements an **Animal Shelter Queue** system using a queue data st
 - **Queue Management**: Keep track of the size and status of the queue (empty or not).
 - **Print Queue**: Display all animals in the queue, including their type and ID.
 
-### How It Works:
-1. Animals are enqueued with an ID and a type ("Dog" or "Cat").
-2. Users can adopt animals from the shelter by dequeuing the oldest animal or selecting a dog/cat to adopt.
-3. The queue supports operations such as `dequeueAny()`, `dequeueDog()`, `dequeueCat()`, and `enqueue()` to manage the shelter effectively.
 
-### Usage:
+## Usage:
 
 1. **Enqueue an Animal**:
     ```java
@@ -39,7 +40,7 @@ This project implements an **Animal Shelter Queue** system using a queue data st
     shelter.dequeueCat();  // Adopt the first queued cat (oldest in queue) from the shelter
     ```
 
-### Example:
+## Example:
 
 ```java
 Queue shelter = new Queue();
@@ -55,11 +56,10 @@ shelter.dequeueDog();  // Dequeues: 3(Dog)
 shelter.dequeueCat();  // Dequeues: 2(Cat)
 ```
 
-### License
+## License
 
-This project is licensed for educational purposes only. Redistribution, modification, or commercial use requires prior written permission.
+This project is provided for personal use only. Redistribution, modification, or commercial use in any form is strictly prohibited without prior written permission from the author.
+For detailed license terms, refer to the [LICENSE](./LICENSE.md) file.
 
 ### Author
-
-- **Stephen Crocker**
-- GitHub: [SearchingSteve](https://github.com/SearchingSteve)
+[SearchingSteve](https://github.com/SearchingSteve)
